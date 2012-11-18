@@ -6,14 +6,21 @@
 %table.table.table-striped.table-bordered
   %tbody
     %tr
-      %th Group link
+      %th Group
+      %th Latitude
+      %th Longitude
+      %th Members
     - @quantifiers.each do |quantifier|
       %tr
-        %td
-          = link_to quantifier.place, quantifier
+        %td= link_to quantifier.place, quantifier
+        %td= quantifier.latitude
+        %td= quantifier.longitude
+        %td= quantifier.members
 %p
   This map was developed by
   = link_to "Quantified Self Toronto.", "http://quantifiedself.ca"
-  Enjoy! Contact
+  It's
+  = link_to "open source", "https://github.com/sachac/meetup-map"
+  \- enjoy! Contact
   = link_to "Sacha Chua (quantified@sachachua.com)", 'mailto:quantified@sachachua.com'
   if you have any questions.
