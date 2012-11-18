@@ -1,0 +1,11 @@
+NEXT STEPS
+
+- Allow people to download the meetup information as a CSV.
+- Keep historical information on membership so that we can plot graphs and analyze the data.
+- Extract information for upcoming events from the meetup page. Store the events and display up to three next events. Keep the event information for historical reasons. Make sure we obey the Meetup API rate limits, perhaps by including some time between requests.
+- Extract video information from http://quantifiedself.com/topics/videos/ and cross-reference it with the meetup group who filmed it
+
+NEWS
+
+- 2012-11-17: Added latitude and longitude to the meetup index
+
